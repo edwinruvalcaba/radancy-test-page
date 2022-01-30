@@ -1,0 +1,45 @@
+@use '../abstracts/' as a;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 200px;
+  padding: 1rem 2rem;
+  border-top: 1px solid a.$green;
+
+  .footer-social_icons {
+    width: 138px;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  a {
+    color: a.$pText;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 1rem;
+
+    .footer-social_icons {
+      margin: 0.5rem 0;
+    }
+
+    p {
+      padding: 1rem 1.2rem 1rem 0;
+    }
+
+    span {
+      padding: 0.5rem 0;
+    }
+  }
+}

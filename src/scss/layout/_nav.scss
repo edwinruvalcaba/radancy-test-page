@@ -1,0 +1,24 @@
+.navbar {
+  height: 150px;
+  display: flex;
+  align-items: center;
+
+  .navbar-logo {
+    width: 315px;
+    height: 35px;
+    margin-top: 12px;
+    margin-left: 2.2rem;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 67px;
+    justify-content: center;
+
+    .navbar-logo {
+      width: 174px;
+      height: 20px;
+      margin: 0;
+    }
+  }
+}

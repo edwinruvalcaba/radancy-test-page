@@ -1,0 +1,15 @@
+@use './abstracts/' as a;
+@use './base/' as b;
+@use './layout/' as l;
+@use './components/' as c;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: a.$background;
+}

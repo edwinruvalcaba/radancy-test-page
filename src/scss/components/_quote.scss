@@ -1,0 +1,33 @@
+.loan-officer__quote {
+  max-width: 20vw;
+  text-align: center;
+  position: relative;
+}
+
+.quote-pic {
+  width: 180px;
+}
+
+.quote-mark {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .loan-officer__quote {
+    max-width: 52vw;
+
+    p {
+      margin: 0.7rem;
+    }
+
+    .quote-mark {
+      top: 47%;
+    }
+
+    .quote-mark__high {
+      top: 27%;
+    }
+  }
+}

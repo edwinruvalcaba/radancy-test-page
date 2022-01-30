@@ -1,0 +1,22 @@
+@use '../abstracts/' as a;
+
+body {
+  font-family: a.$font-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: a.$green;
+}
+
+p {
+  color: a.$pText;
+  line-height: 1.5rem;
+}
+
+.quote-sig {
+  color: a.$lightGreen;
+}

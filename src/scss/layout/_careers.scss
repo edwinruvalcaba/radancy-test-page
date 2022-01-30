@@ -1,0 +1,47 @@
+@use '../abstracts/' as a;
+
+.careers {
+  min-height: 250px;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  h2 {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin: 0 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .separator {
+      margin: 1rem 0;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      line-height: 1.8rem;
+    }
+
+    .careers-btn {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.separator {
+  width: 75px;
+  height: 2px;
+  background-color: a.$green;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.careers-btn {
+  align-self: center;
+  margin-bottom: 1rem;
+}
